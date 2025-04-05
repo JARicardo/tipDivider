@@ -1,13 +1,13 @@
-const express = require('express');
-const cors = require('cors');
-const api = require('../routes/api');
+import express from 'express'
+import cors from 'cors'
+import api from '../routes/api'
 
-const app = express();
+const app = express()
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json())
 
 // Routes
-app.use('/api', api);
+app.use('/api', api)
 
-module.exports = app;
+export default app
